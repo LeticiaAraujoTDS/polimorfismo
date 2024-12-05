@@ -13,8 +13,9 @@ class CanetaVermelha extends CanetaAzul{
     public function escreverEspec(){
         $this->escrever();
     }
-    //chama a classe pai(canetaAzul)
+
     public function escreverPai(){
         parent::escrever();
+        //chama a classe pai(canetaAzul) -> para quando se sobreescreve o método do pai, e quer usar o do pai.
     }
 }
